@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/coming-soon.css">
+    <link rel="stylesheet" href="assets/css/success.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
 </head>
@@ -79,16 +80,7 @@
 
 </div>
 
-            <!-- <div data-aos="fade-up"
-     data-aos-anchor-placement="top-center">
-     <div class="buy-rent-lease">
-        <div class="buy"><p>Buy</p></div>
-        <div class="rent"><p>Rent</p></div>
-        <div class="lease"><p>Lease</p></div>
-    </div>
-
-</div>
-             -->
+    
 
              <div data-aos="zoom-in"
              data-aos-duration="1500">
@@ -107,7 +99,7 @@
         <p>Be The First To Know When We Launch </p>
         <form name="email" method="post" data-netlify="true">
             <div class="form-box">
-                <input type="email" placeholder="Enter Your Email Address" id="email" name="email">
+                <input type="email" placeholder="Enter Your Email Address" id="email" name="email" required>
 
                 <button type="submit" id="">Notify me</button>
            </div>
@@ -174,12 +166,12 @@
             <p>Fill in your details</p>
             
     
-            <form name="contact" id="form" method="post" data-netlify="true">
+            <form name="contact" action="success.html" id="form" method="post" data-netlify="true">
                 <label for="fullname" class="name">Full Name</label>
-                <input type="text" name="fullname" id="fullname">
+                <input type="text" name="fullname" id="fullname" required>
     
                 <label for="tel" class="number">Phone Number</label>
-                <input type="tel" name="tel" id="tel"> 
+                <input type="tel" name="tel" id="tel" required> 
     
     
                 <div class="select-group">
@@ -192,14 +184,18 @@
 
                   <div class="dropdown hidden" id="dropdown">
                     <label class="select-item" for="select-owner">Property Owner</label>
-                    <input class="option" type="radio" id="select-owner" name="who" value="Owner">
+                    <input class="option" type="radio" id="select-owner" name="who" value="owner" required>
     
                     <label class="select-item" for="select-agent">Property Agent</label>
-                    <input class="option" type="radio" id="select-agent" name="who" value="Agent">
-            
+                    <input class="option" type="radio" id="select-agent" name="who" value="agent" required>
                   </div>
     
                 </div>
+
+                <label for="text" class="number">Referral code</label>
+                <input type="text" name="text" id="text" placeholder="Optional"> 
+
+
                 
     
                 <input type="submit" value="Submit">
